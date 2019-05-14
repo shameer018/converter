@@ -37,4 +37,4 @@ export class TemperatureInput extends Component {
     }
     return <p>The water would not boil.</p>;
   }
-  export default TemperatureInput;
+  
