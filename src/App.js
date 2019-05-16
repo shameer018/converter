@@ -11,7 +11,7 @@ function toCelsius(fahrenheit) {
 function toFahrenheit(celsius) {
   return (celsius * 9 / 5) + 32 }
 
-  function tryConvert(temperature, convert) {
+function tryConvert(temperature, convert) {
     const input = parseFloat(temperature)
     if (Number.isNaN(input)) return ''
     const output = convert(input)
@@ -45,7 +45,6 @@ class App extends Component {
     return (
       
       <body>
-      <div>
         <h1>Temperature Converter</h1>
         <header className="App-header" >
         <img src={logo} className="App-logo" alt="logo" />
@@ -54,7 +53,6 @@ class App extends Component {
         <TemperatureInput scale="f" temperature={fahrenheit} onTemperatureChange={this.handleFahrenheitChange} />
         <BoilingVerdict celsius={parseFloat(celsius)} />
       
-      </div>
       </body>
     );
   }
